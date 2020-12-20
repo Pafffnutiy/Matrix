@@ -16,17 +16,13 @@ struct Matrix
     Matrix(size_t rows, size_t cols);//конструктор прямоугольной матрицы
     Matrix(size_t order);//конструктор квалратной матрицы
 
-    void WriteMatrix() const; //вывод в std::cout
     void SwapRows(size_t r1, size_t r2); //
     void Triangle();//приведение к треугольному виду
     long double CalcDeterminant() const;//Вычисление определителя
     void FillMagickSE();//заполнение матрицы
     void FillRandomInt();//заполнение случайными целыми
     void FillRandomDouble();//заполнение случайными double    
-    
-    Matrix AddMatrix( const Matrix & other) const; //создает новую матрицу
    
-    void ReadMatrix();
     Matrix operator+ (const Matrix & right) const;
     Matrix operator- (const Matrix & right) const;
     
