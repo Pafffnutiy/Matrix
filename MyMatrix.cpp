@@ -91,16 +91,6 @@ Matrix::Matrix(size_t order)
     }
 }
 
-
-void Matrix::WriteMatrix() const {
-    std::cout << this-> rows << " " << this->cols << '\n';
-    for (size_t i = 0; i < this->rows; ++i){
-        for (size_t j = 0; j < this->cols; ++j)
-            std::cout << this->data[i][j] << " ";
-        std::cout << '\n';
-    }
-}
-
 void Matrix::SwapRows(size_t r1, size_t r2){
         for(size_t i = 0;i<this->cols;++i){
             //std::swap(this->data[r1][i],this->data[r2][i]);

@@ -16,6 +16,7 @@ struct Matrix
     Matrix(size_t rows, size_t cols);//конструктор прямоугольной матрицы
     Matrix(size_t order);//конструктор квалратной матрицы
 
+    void WriteMatrix() const; //вывод в std::cout
     void SwapRows(size_t r1, size_t r2); //
     void Triangle();//приведение к треугольному виду
     long double CalcDeterminant() const;//Вычисление определителя
